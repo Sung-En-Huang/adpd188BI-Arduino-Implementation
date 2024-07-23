@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "repository": {
+        "url": "https://github.com/analogdevicesinc/no-OS.git",
+        "type": "git"
+    },
+    "build": {
+        "includeDir": ".",
+        "srcDir": ".",
+        "flags": [
+            "-I no-OS/include/",
+            "-I no-OS/iio/"
+        ],
+        "srcFilter":[
+            "-<*>",
+            "+<no-OS/drivers/api/*.c>",
+            "+<no-OS/util/*.c>",
+            "+<no-OS/iio/*.c>",
+            "+<no-OS/drivers/photo-electronic/adpd188/*.c>"
+        ]    
+    }
+}

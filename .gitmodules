@@ -1,0 +1,3 @@
+[submodule "thirdparty/no-OS/no-OS"]
+	path = thirdparty/no-OS/no-OS
+	url = https://github.com/analogdevicesinc/no-OS
